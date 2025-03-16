@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F3F3F3</color>
+    <color name="button_color">#008577</color>
+    <color name="button_delete">#D32F2F</color>
+</resources>

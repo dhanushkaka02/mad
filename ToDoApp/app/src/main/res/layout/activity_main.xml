@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Field for Adding Tasks -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter new task"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_add"
+            android:background="@null"
+            android:contentDescription="Add Task"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Delete Completed Tasks Button -->
+    <ImageButton
+        android:id="@+id/btnDeleteCompleted"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_delete"
+        android:background="@null"
+        android:contentDescription="Delete Completed Tasks"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- RecyclerView for Task List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"/>
+</LinearLayout>

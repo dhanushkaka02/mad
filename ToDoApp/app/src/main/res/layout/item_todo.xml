@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/item_background"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="12dp">  <!-- ✅ Adds spacing between tasks -->
+
+    <!-- Checkbox to Mark Task Complete -->
+    <CheckBox
+        android:id="@+id/todoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Task Title -->
+    <TextView
+        android:id="@+id/todoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Todo Title"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:padding="10dp"/>
+
+    <!-- Delete Image Button (Bigger Size) -->
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_delete"
+        android:background="@null"
+        android:contentDescription="Delete Task"
+        android:padding="8dp"/>
+</LinearLayout>
